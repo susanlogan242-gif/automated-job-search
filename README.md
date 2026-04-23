@@ -15,7 +15,7 @@ Designed and deployed an automated vacancy retrieval system on a Linux VPS, inte
 - **Cron mode** — automated 7am GMT daily alert across all tiers
 - **Listener mode** — long-polls Telegram for on-demand queries by tier
 - **Structured logging** — timestamped log file for all API calls, sends, and errors
-- **Location & salary filtering** — London, 30-mile radius, £27k+ minimum
+- **Location & salary filtering** — configurable region, radius, and minimum salary
 
 ---
 

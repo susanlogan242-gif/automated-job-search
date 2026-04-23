@@ -29,27 +29,20 @@ ADZUNA_APP_KEY     = os.environ["ADZUNA_APP_KEY"]
 
 STATE_FILE = "state.json"
 
-# ── Job tiers ──────────────────────────────────────────────────────────────────
+# ── Job tiers (example roles — configure for your own search) ──────────────────
 LEVEL_1 = [
-    "Polymer Scientist", "Polymer Chemist", "Formulation Chemist",
-    "R&D Chemist", "Product Development Chemist", "Materials Scientist",
-    "Computational Materials Scientist", "Materials Informatics Scientist",
-    "Cheminformatics Scientist", "Polymer Data Scientist",
+    "Materials Scientist", "Formulation Chemist",
+    "R&D Chemist", "Computational Materials Scientist",
 ]
 
 LEVEL_2 = [
-    "Junior Materials Scientist", "Junior Polymer Chemist", "Junior R&D Chemist",
-    "Graduate Materials Scientist", "Research Associate Materials",
-    "Associate Scientist", "Junior ML Engineer", "Graduate Data Scientist",
-    "Junior Cheminformatics Scientist", "Junior Computational Materials Scientist",
-    "Research Associate Cheminformatics",
+    "Graduate Materials Scientist", "Junior R&D Chemist",
+    "Research Associate", "Associate Scientist",
 ]
 
 LEVEL_3 = [
-    "AI ML Engineer Materials", "Digital Twin Engineer",
-    "Materials Informatics Lead", "Sustainable Materials Innovation",
-    "Battery Materials Scientist", "Nanomaterials Scientist",
-    "Technical Consultant Speciality Chemicals", "Fuel Cell Materials",
+    "ML Engineer", "Digital Twin Engineer",
+    "Materials Informatics Scientist",
 ]
 
 TIER_MAP = {
@@ -101,10 +94,10 @@ def fetch_reed(roles):
                 auth=(REED_API_KEY, ""),
                 params={
                     "keywords": role,
-                    "locationName": "London",
+                    "locationName": "UK",
                     "distancefromlocation": 30,
                     "resultsToTake": 5,
-                    "minimumSalary": 27000,
+                    "minimumSalary": 30000,
                 },
                 timeout=10
             )
@@ -116,7 +109,7 @@ def fetch_reed(roles):
                     "id": f"reed_{j['jobId']}",
                     "title": j.get("jobTitle", ""),
                     "company": j.get("employerName", ""),
-                    "location": j.get("locationName", "London"),
+                    "location": j.get("locationName", "UK"),
                     "salary": salary,
                     "url": j.get("jobUrl", ""),
                     "board": "Reed",
@@ -135,11 +128,11 @@ def fetch_adzuna(roles):
                     "app_id": ADZUNA_APP_ID,
                     "app_key": ADZUNA_APP_KEY,
                     "what": role,
-                    "where": "London",
+                    "where": "UK",
                     "distance": 30,
                     "results_per_page": 5,
                     "max_days_old": 1,
-                    "salary_min": 27000,
+                    "salary_min": 30000,
                 },
                 timeout=10
             )
