@@ -102,7 +102,7 @@ Send these messages to your bot:
 | `jobs` | Next 10 unseen jobs across all tiers |
 | `jobs level 1` | Level 1 — Current/Bridging roles |
 | `jobs level 2` | Level 2 — Junior/Entry roles |
-| `jobs level 3` | Level 3 — AI/ML Stretch roles |
+| `jobs level 3` | Level 3 — AI/ML roles |
 | `jobs bracket 1/2/3` | Aliases for the above |
 
 ---
@@ -115,7 +115,7 @@ Polymer Scientist, Polymer Chemist, Formulation Chemist, R&D Chemist, Product De
 **Level 2 — Junior/Entry**
 Junior Materials Scientist, Junior Polymer Chemist, Junior R&D Chemist, Graduate Materials Scientist, Research Associate Materials, Associate Scientist, Junior ML Engineer, Graduate Data Scientist, Junior Cheminformatics Scientist, Junior Computational Materials Scientist, Research Associate Cheminformatics
 
-**Level 3 — AI/ML Stretch**
+**Level 3 — AI/ML**
 AI ML Engineer Materials, Digital Twin Engineer, Materials Informatics Lead, Sustainable Materials Innovation, Battery Materials Scientist, Nanomaterials Scientist, Technical Consultant Speciality Chemicals, Fuel Cell Materials
 
 ---

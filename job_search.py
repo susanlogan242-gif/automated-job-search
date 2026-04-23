@@ -60,8 +60,8 @@ TIER_LABELS = {
     "jobs bracket 1": "Level 1 — Current/Bridging",
     "jobs level 2": "Level 2 — Junior/Entry",
     "jobs bracket 2": "Level 2 — Junior/Entry",
-    "jobs level 3": "Level 3 — AI/ML Stretch",
-    "jobs bracket 3": "Level 3 — AI/ML Stretch",
+    "jobs level 3": "Level 3 — AI/ML",
+    "jobs bracket 3": "Level 3 — AI/ML",
     "jobs": "All Levels",
 }
 
