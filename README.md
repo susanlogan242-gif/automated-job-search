@@ -144,3 +144,4 @@ AI ML Engineer Materials, Digital Twin Engineer, Materials Informatics Lead, Sus
 | Scheduling | Linux cron |
 | Deployment | Hostinger KVM Linux VPS |
 | Logging | Python `logging` module |
+| Development tooling | Claude Code (Anthropic) |
