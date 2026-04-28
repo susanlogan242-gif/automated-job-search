@@ -145,3 +145,8 @@ AI ML Engineer Materials, Digital Twin Engineer, Materials Informatics Lead, Sus
 | Deployment | Hostinger KVM Linux VPS |
 | Logging | Python `logging` module |
 | Development tooling | Claude Code (Anthropic) |
+
+---
+
+## Licence
+This project is licensed under the AGPL-3.0 licence. See the [LICENSE](LICENSE) file for details.
